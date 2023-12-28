@@ -1,0 +1,33 @@
+
+entity Acronym {
+	termOrAcronym String required
+    name String
+    definition String
+}
+
+entity Context {
+	name String required
+}
+
+entity SubContext {
+	name String required
+}
+ 
+relationship ManyToMany {
+	Acronym{context(name)} to Context{acronym(termOrAcronym)}
+    SubContext{context(name)} to Context{subContext(name)}
+}
+relationship ManyToOne {
+	Acronym{user(login)} to User with builtInEntity
+}
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
