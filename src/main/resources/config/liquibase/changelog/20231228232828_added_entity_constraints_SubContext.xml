@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity SubContext.
+    -->
+    <changeSet id="20231228232828-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="sub_context_id"
+                                 baseTableName="rel_sub_context__context"
+                                 constraintName="fk_rel_sub_context__context__sub_context_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_context"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="context_id"
+                                 baseTableName="rel_sub_context__context"
+                                 constraintName="fk_rel_sub_context__context__context_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="context"
+                                 />
+    </changeSet>
+</databaseChangeLog>

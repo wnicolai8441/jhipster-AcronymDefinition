@@ -1,0 +1,26 @@
+{
+  "acronymDefinitionApp": {
+    "context": {
+      "home": {
+        "title": "Contexts",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Context erstellen",
+        "createOrEditLabel": "Context erstellen oder bearbeiten",
+        "notFound": "Keine Contexts gefunden"
+      },
+      "created": "Context erstellt mit ID {{ param }}",
+      "updated": "Context aktualisiert mit ID {{ param }}",
+      "deleted": "Context gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Context {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Context"
+      },
+      "id": "ID",
+      "name": "Name",
+      "acronym": "Acronym",
+      "subContext": "Sub Context"
+    }
+  }
+}
