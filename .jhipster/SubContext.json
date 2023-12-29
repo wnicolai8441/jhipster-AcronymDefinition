@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "changelogDate": "20231228232828"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "sub_context",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "SubContext",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "context",
+      "otherEntityRelationshipName": "subContext",
+      "relationshipName": "context",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
