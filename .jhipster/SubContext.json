@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "changelogDate": "20231228232828"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "sub_context",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "SubContext",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "termOrAcronym",
+      "otherEntityName": "acronym",
+      "otherEntityRelationshipName": "subContext",
+      "relationshipName": "acronym",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

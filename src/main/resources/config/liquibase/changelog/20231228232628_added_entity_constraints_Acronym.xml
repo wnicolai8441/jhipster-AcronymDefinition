@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Acronym.
+    -->
+    <changeSet id="20231228232628-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="sub_context_id"
+                                 baseTableName="acronym"
+                                 constraintName="fk_acronym__sub_context_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_context"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="acronym"
+                                 constraintName="fk_acronym__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="acronym_id"
+                                 baseTableName="rel_acronym__context"
+                                 constraintName="fk_rel_acronym__context__acronym_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="acronym"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="context_id"
+                                 baseTableName="rel_acronym__context"
+                                 constraintName="fk_rel_acronym__context__context_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="context"
+                                 />
+    </changeSet>
+</databaseChangeLog>

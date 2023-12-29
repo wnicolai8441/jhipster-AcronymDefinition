@@ -1,0 +1,25 @@
+{
+  "acronymDefinitionApp": {
+    "subContext": {
+      "home": {
+        "title": "Sub Contexts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sub Context",
+        "createOrEditLabel": "Create or edit a Sub Context",
+        "notFound": "No Sub Contexts found"
+      },
+      "created": "A new Sub Context is created with identifier {{ param }}",
+      "updated": "A Sub Context is updated with identifier {{ param }}",
+      "deleted": "A Sub Context is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sub Context {{ id }}?"
+      },
+      "detail": {
+        "title": "Sub Context"
+      },
+      "id": "ID",
+      "name": "Name",
+      "acronym": "Acronym"
+    }
+  }
+}

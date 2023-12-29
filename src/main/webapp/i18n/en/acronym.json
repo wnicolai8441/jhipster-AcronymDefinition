@@ -1,0 +1,30 @@
+{
+  "acronymDefinitionApp": {
+    "acronym": {
+      "home": {
+        "title": "Acronyms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Acronym",
+        "createOrEditLabel": "Create or edit a Acronym",
+        "notFound": "No Acronyms found"
+      },
+      "created": "A new Acronym is created with identifier {{ param }}",
+      "updated": "A Acronym is updated with identifier {{ param }}",
+      "deleted": "A Acronym is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Acronym {{ id }}?"
+      },
+      "detail": {
+        "title": "Acronym"
+      },
+      "id": "ID",
+      "termOrAcronym": "Term Or Acronym",
+      "name": "Name",
+      "definition": "Definition",
+      "image": "Image",
+      "subContext": "Sub Context",
+      "user": "User",
+      "context": "Context"
+    }
+  }
+}
